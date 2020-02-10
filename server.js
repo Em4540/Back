@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const mongoURI = 'mongodb://localhost:27017/mevnloginreg'
+const mongoURI = 'mongodb://localhost:27017/loginreg'
 
 mongoose.connect(mongoURI, { useNewUrlParser: true })
     .then(() => console.log("MongoDB Connected"))
